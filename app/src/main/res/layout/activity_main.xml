@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--
+isIndicatoer:
+如果是指示器, 用户就不能手动更改了
+numStars 多少个星星: 对于显示几个星星, width不能用match这个, 不然显示的特别多
+stepSize 看几颗星几颗星增加
+-->
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:numStars="3"
+        android:stepSize="0.5"
+        />
+
+
+</android.support.constraint.ConstraintLayout>
